@@ -21,7 +21,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
 }
 
  address {
@@ -47,7 +47,7 @@ body {
     font-size: 18px;
     font-weight: 700;
     line-height: 1.17;
-    letter-spacing: 0.54px;
+    letter-spacing: 0.03375em;
     text-transform: uppercase;
  }
 
@@ -57,7 +57,7 @@ body {
     font-size: 18px;
     font-weight: 700;
     line-height: 1.17;
-    letter-spacing: 0.54px;
+    letter-spacing: 0.03375em;
     text-transform: uppercase;
 }
 
@@ -78,7 +78,8 @@ body {
 
 .address-link {
     color: var(--text-color-slate, #434455);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   */
 }
 
  .main-title,
@@ -92,7 +93,7 @@ body {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
-    letter-spacing: 1.12px;
+    letter-spacing: 0.07em;
  }
 
  .main-button{
@@ -100,7 +101,7 @@ body {
     color: var(--whitebackground-color-wtite, #FFFFFF);
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.64px;
+    letter-spacing: 0.04em;
     cursor: pointer;
 }
 
@@ -115,7 +116,7 @@ body {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
-    letter-spacing: 0.72px;
+    letter-spacing: 0.045em;
     text-transform: capitalize;
  }
  
@@ -124,7 +125,7 @@ body {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.0.25em;
  }
  
  .team-section {
@@ -149,7 +150,7 @@ body {
      font-size: 18px;
      font-weight: 700;
      line-height: 1.17;
-     letter-spacing: 0.54px;
+     letter-spacing: 0.03375em;
      text-transform: uppercase;
  }
 
@@ -159,15 +160,13 @@ body {
      font-size: 18px;
      font-weight: 700;
      line-height: 1.17;
-     letter-spacing: 0.54px;
+     letter-spacing: 0.03375em;
      text-transform: uppercase;
  }
 
  .footer-block-p {
      color: var(--light-color-cloud, #F4F4FD);
-     line-height: 1.5;
-     letter-spacing: 0.02em;
-}
+ }
 
 /*
  .header-block {}
