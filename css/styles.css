@@ -13,6 +13,17 @@ root{
 --modalbackground-color-modal:#FCFCFC;
 }
 
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+   margin: 0;
+   padding: 0;
+}
+
 body {
     background-color: var(--whitebackground-color-wtite, #FFFFFF);
     font-family: Roboto, sans-serif;
@@ -39,6 +50,8 @@ body {
 
  ul {
     list-style-type: none;
+    margin: 0;
+    padding-left: 0;
  }
  
  .header-logo {
