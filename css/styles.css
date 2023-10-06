@@ -13,12 +13,6 @@ root{
 --modalbackground-color-modal:#FCFCFC;
 }
 
-*,
-*::before,
-*::after {
-   box-sizing: border-box;
-}
-
 h1, h2, h3, h4, h5, h6, p {
    margin: 0;
    padding: 0;
@@ -54,6 +48,12 @@ body {
     padding-left: 0;
  }
  
+ .header-block {
+   width: 1440px;
+   height: 72px;
+   flex-shrink: 0;
+ }
+
  .header-logo {
     color: var(--primarybrand-color-iris, #4D5AE5);
     font-family: Raleway, sans-serif;
@@ -95,11 +95,10 @@ body {
    */
 }
 
- .main-title,
- .footer {
-    background: var(--modaloverlay-color-navybluemodal, #2E2F42);
-}
-
+ .main-title {
+   background: var(--modaloverlay-color-navybluemodal, #2E2F42);
+ }
+ 
  .hero-title {
     color: var(--whitebackground-color-wtite, #FFF);
     text-align: center;
@@ -153,6 +152,10 @@ body {
     font-size: 16px;
   }
 
+ .footer {
+   background: var(--modaloverlay-color-navybluemodal, #2E2F42);
+ }
+
  .footer-block {
     background-color: var(--dark-color-navy, #2E2F42);
  }
@@ -181,8 +184,16 @@ body {
      color: var(--light-color-cloud, #F4F4FD);
  }
 
+ .container {
+    max-width: 100%;
+    /*padding-left: 156px;
+    padding-right: 156px;*/
+    margin-left: 156px;
+    margin-right: 156px;
+ }
+
 /*
- .header-block {}
+
  
  .defenders-section {}
  .defenders-section-h-two {}
