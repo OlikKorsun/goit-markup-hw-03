@@ -57,6 +57,7 @@ body {
  .container {
    display: flex;
    width: 1128px;
+   height: 72px;
    padding-left: 15px;
    padding-right: 15px;
    box-sizing: border-box;
@@ -69,10 +70,10 @@ body {
    height: 24px;
    gap: 40px;
    align-items: center;
-   margin-top: 24px;
-   margin-bottom: 24px;
-   margin-left: 347px;
-   margin-right: 832px;
+   padding-top: 24px;
+   padding-bottom: 24px;
+   padding-left: 347px;
+   padding-right: 832px;
  }
 
  .address-container {
@@ -80,6 +81,7 @@ body {
  }
 
  .header-logo {
+    display: flex;
     color: var(--primarybrand-color-iris, #4D5AE5);
     font-family: Raleway, sans-serif;
     font-size: 18px;
@@ -89,6 +91,7 @@ body {
     text-transform: uppercase;
     padding-top: 24px;
     padding-bottom: 24px;
+
  }
 
  .header-span {
