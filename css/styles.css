@@ -54,6 +54,31 @@ body {
    flex-shrink: 0;
  }
 
+ .container {
+   display: flex;
+   width: 1128px;
+   padding-left: 15px;
+   padding-right: 15px;
+   box-sizing: border-box;
+ }
+
+ .nav_container {
+   display: flex;
+   flex-direction: row;
+   width: 261px;
+   height: 24px;
+   gap: 40px;
+   align-items: center;
+   margin-top: 24px;
+   margin-bottom: 24px;
+   margin-left: 347px;
+   margin-right: 832px;
+ }
+
+ .address-container {
+   display: flex;
+ }
+
  .header-logo {
     color: var(--primarybrand-color-iris, #4D5AE5);
     font-family: Raleway, sans-serif;
@@ -62,6 +87,8 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03375em;
     text-transform: uppercase;
+    padding-top: 24px;
+    padding-bottom: 24px;
  }
 
  .header-span {
