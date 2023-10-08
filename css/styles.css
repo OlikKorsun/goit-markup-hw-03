@@ -63,7 +63,6 @@ body {
    flex-shrink: 0;
  }
 
-
  .container {
     display: flex;
     width: 1158px;
@@ -94,6 +93,7 @@ body {
  }
  .address-container {
    display: inline-flex;
+   width: 344px;
    height: 72px;
    flex-direction: row;
    justify-content: flex-end;
@@ -112,7 +112,7 @@ body {
     font-weight: 700;
     line-height: 1.17;
     align-items: baseline;
-    letter-spacing: 0.03375em;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -124,7 +124,7 @@ body {
     font-size: 18px;
     font-weight: 700;
     line-height: 1.17;
-    letter-spacing: 0.03375em;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
@@ -177,7 +177,7 @@ body {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.02em;
     margin-top: 188px;
     margin-left: 472px;
     margin-right: 472px;
@@ -215,7 +215,7 @@ body {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
-    letter-spacing: 0.045em;
+    letter-spacing: 0.02em;
     text-transform: capitalize;
  }
  
@@ -224,12 +224,20 @@ body {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: 0.0.25em;
+    letter-spacing: 0.02em;
  }
  
  .defenders-secondary-container {
    display: flex;
  }
+
+ .defenders-section-li {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   width: calc((100%-24*3)/4);
+ }
+
  .team-section {
     background-color: var(--light-color-cloud, #F4F4FD);
     width: 1440px;
@@ -258,7 +266,7 @@ body {
      font-size: 18px;
      font-weight: 700;
      line-height: 1.17;
-     letter-spacing: 0.03375em;
+     letter-spacing: 0.03em;
      text-transform: uppercase;
  }
 
@@ -268,7 +276,7 @@ body {
      font-size: 18px;
      font-weight: 700;
      line-height: 1.17;
-     letter-spacing: 0.03375em;
+     letter-spacing: 0.03em;
      text-transform: uppercase;
  }
 
