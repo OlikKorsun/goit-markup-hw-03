@@ -40,57 +40,74 @@ body {
 
  a {
     text-decoration: none;
+    /*display: inline;*/
  }
 
  ul {
     list-style-type: none;
     margin: 0;
-    padding-left: 0;
- }
+    padding: 0;
+    }
  
+ nav, address{
+      display: flex;
+    }
+
  .header-block {
    width: 1440px;
    height: 72px;
    flex-shrink: 0;
  }
 
- .container {
-   display: flex;
-   width: 1128px;
-   height: 72px;
-   padding-left: 15px;
-   padding-right: 15px;
-   box-sizing: border-box;
- }
 
- .nav_container {
-   display: flex;
+ .container {
+    display: flex;
+    max-width: 1128px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 140px;
+    margin-right: 140px;
+    box-sizing: border-box;
+ }
+  
+ .nav-container {
+   display: inline-flex;
    flex-direction: row;
    width: 261px;
    height: 24px;
    gap: 40px;
-   align-items: center;
+   align-items: baseline;
+   justify-content: flex-start;
    padding-top: 24px;
    padding-bottom: 24px;
-   padding-left: 347px;
-   padding-right: 832px;
+   padding-left: 76px;
  }
 
  .address-container {
-   display: flex;
+   display: inline-flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   gap: 40px;
+   align-items: baseline;
+   padding-top: 24px;
+   padding-bottom: 24px;
+   padding-left: 332px;
+   padding-right: 0;
  }
 
  .header-logo {
-    display: flex;
+    display: inline-flex;
     color: var(--primarybrand-color-iris, #4D5AE5);
     font-family: Raleway, sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.17;
+    align-items: baseline;
     letter-spacing: 0.03375em;
     text-transform: uppercase;
     padding-top: 24px;
     padding-bottom: 24px;
+
 
  }
 
@@ -121,8 +138,7 @@ body {
 
 .address-link {
     color: var(--text-color-slate, #434455);
-   /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
  .main-title {
@@ -219,13 +235,13 @@ body {
      color: var(--light-color-cloud, #F4F4FD);
  }
 
- .container {
+/* .container {
     max-width: 100%;
     /*padding-left: 156px;
-    padding-right: 156px;*/
+    padding-right: 156px;
     margin-left: 156px;
     margin-right: 156px;
- }
+ }*/
 
 /*
 
