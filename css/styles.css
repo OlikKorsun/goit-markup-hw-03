@@ -203,18 +203,19 @@ body {
  }
 
  .main-button{
-    background: var(--primarybrand-color-iris, #4D5AE5);
+    background-color: var(--primarybrand-color-iris, #4D5AE5);
     color: var(--whitebackground-color-wtite, #FFFFFF);
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
     text-align: center;
-    width: 105px;
-    height: 24px;
+    min-width: 169px;
+    height: 56px;
+    border: none;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    /*display: inline-flex;*/
+    display: block;
     padding: 16px 32px;
     align-items: flex-start;
     gap: 10px;
@@ -248,18 +249,26 @@ body {
     letter-spacing: 0.02em;
  }
  
- .defenders-secondary-container {
+ .defenders-section {
+   padding: 120px 0;
+ }
+
+ .defenders-section-ul {
    display: flex;
    gap: 24px;
-   margin-top: 120px;
  }
+
+ /*.defenders-secondary-container {
+   display: flex;
+   margin-top: 120px;
+ }*/
 
  .defenders-section-li {
    display: flex;
    flex-direction: column;
    align-items: flex-start;
    gap: 8px;
-   width: 264px;
+   width: calc((100% - 72px) / 4)
  }
 
   .team-secondary-container {
