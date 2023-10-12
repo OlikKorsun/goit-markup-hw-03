@@ -199,7 +199,6 @@ h3 {
    box-sizing: border-box;
 }
 
-
  .defenders-section {
    padding: 120px 0;
  }
@@ -208,11 +207,6 @@ h3 {
    display: flex;
    gap: 24px;
  }
-
- /*.defenders-secondary-container {
-   display: flex;
-   margin-top: 120px;
- }*/
 
  .defenders-section-li {
    display: flex;
@@ -229,52 +223,52 @@ h3 {
  .section-h-three {
    margin-bottom: 8px;
  }
- /* .team-secondary-container {
-   display: flex;
-   gap: 24px;
-   margin-top: 72px;
-  }*/
 
  .team-section {
-    background-color: var(--light-color-cloud, #F4F4FD);
-    width: 1440px;
-    height: 732px;
-    flex-shrink: 0;
-    padding: 120px 0;
+   background-color: var(--light-color-cloud, #F4F4FD);
+   width: 1440px;
+   height: 732px;
+   flex-shrink: 0;
+   padding: 120px 0;
   }
 
-  .team-section-ul{
+ .team-container, 
+ .portfolio-container {
+  flex-direction: column; 
+ }
+ 
+ .team-section-ul{
    display: flex;
    gap:24px;
   }
 
  .team-section-li {
-    background-color: var(--whitebackground-color-wtite, #FFFFFF);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: calc((100% - 72px) / 4);
-    border-radius: 0px 0px 4px 4px;
-   }
+   background-color: var(--whitebackground-color-wtite, #FFFFFF);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: calc((100% - 72px) / 4);
+   border-radius: 0px 0px 4px 4px;
+ }
 
-   .name-prof {
-      padding: 32px 0;
-   }
+ .name-prof {
+   padding: 32px 0;
+ }
 
-   .team-section-h-three{
-      text-align: center;
-   }
+ .team-section-h-three{
+   text-align: center;
+   padding-bottom: 8px;
+ }
 
-   .team-section-p {
-      text-align: center;
-   }
+ .team-section-p {
+   text-align: center;
+ }
 
-   .portfolio-section{
-      padding-top: 120px;
-      padding-bottom: 120px;
-   }
-
+ .portfolio-section{
+   padding: 120px 0;
+ }
+ 
  .portfolio-section-ul{
    display: flex;
    flex-direction: row;
@@ -297,6 +291,7 @@ h3 {
    padding: 32px 16px;
    border: 1px solid var(--accent-color-cornflower, #e7e9fc);
    border-top: none;
+   align-items: flex-start;
  }
  .portfolio-section-h-three{
    margin-bottom: 8px;
