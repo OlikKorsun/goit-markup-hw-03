@@ -98,7 +98,6 @@ body {
   .nav-menu {
    display: flex;
    gap: 40px;
-   padding-left: 76px;
  }
  
  .header-logo {
@@ -113,6 +112,7 @@ body {
    text-transform: uppercase;
    padding-top: 24px;
    padding-bottom: 24px;
+   margin-right: 76px;
   }
 
  .header-span {
@@ -160,10 +160,10 @@ body {
    width: 1440px;
    height: 600px;
    box-sizing: border-box;
+   padding: 188px 0;
  }
 
 .main-section {
-   display: block;
    flex-direction: column;
 }
 
@@ -183,6 +183,7 @@ body {
  }
 
  .main-button{
+   display: block;
    background-color: var(--primarybrand-color-iris, #4D5AE5);
    color: var(--whitebackground-color-wtite, #FFFFFF);
    font-family: inherit;
@@ -191,8 +192,8 @@ body {
    letter-spacing: 0.04em;
    cursor: pointer;
    text-align: center;
-   min-width: 169px;
-   max-height: 56px;
+   width: 169px;
+   height: 56px;
    border: none;
    border-radius: 4px;
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -222,6 +223,10 @@ body {
    width: calc((100% - 72px) / 4)
  }
  
+ .hidden-title {
+   visibility: hidden;
+ }
+
  .section-h-two {
    margin-bottom: 72px;
  }
@@ -240,7 +245,8 @@ body {
   }
 
  .team-container, 
- .portfolio-container {
+ .portfolio-container,
+ .defenders-container {
   flex-direction: column; 
  }
  
@@ -265,7 +271,7 @@ body {
 
  .team-section-h-three{
    text-align: center;
-   padding-bottom: 8px;
+   margin-bottom: 8px;
  }
 
  .team-section-p {
@@ -322,13 +328,13 @@ body {
 
  .footer-logo {
    color: var(--primarybrand-color-iris, #4D5AE5);
+   display: inline-block;
    font-family: Raleway, sans-serif;
    font-size: 18px;
    font-weight: 700;
    line-height: 1.17;
    letter-spacing: 0.03em;
    text-transform: uppercase;
-   display: inline-block;
    margin-bottom: 16px;
  }
 
