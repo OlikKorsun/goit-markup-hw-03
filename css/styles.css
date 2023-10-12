@@ -13,6 +13,7 @@ root{
 --modalbackground-color-modal:#FCFCFC;
 }
 
+/*==== Скидання в 0 відступів =====*/
 *,
 ::before,
 ::after {
@@ -20,6 +21,7 @@ root{
    padding: 0;
 }
 
+/*==== Основні текстові характеристики тіла =====*/
 body {
     background-color: var(--whitebackground-color-wtite, #FFFFFF);
     font-family: Roboto, sans-serif;
@@ -51,7 +53,7 @@ body {
       display: flex;
    }
 
-h2 {
+ h2 {
    color: var(--modaloverlay-color-navybluemodal, #2E2F42);
    text-align: center;
    font-size: 36px;
@@ -59,16 +61,17 @@ h2 {
    line-height: 1.11;
    letter-spacing: 0.02em;
    text-transform: capitalize;
-}
+ }
 
-h3 {
+ h3 {
    color: var(--modaloverlay-color-navybluemodal, #2E2F42);
    font-size: 20px;
    font-weight: 500;
    line-height: 1.2;
    letter-spacing: 0.02em;
-}
+ }
 
+ /*==== Основний контейнер =====*/
  .container {
    display: flex;
    width: 1158px;
@@ -79,6 +82,7 @@ h3 {
    box-sizing: border-box;
  }
 
+ /*==== Описаловка Хедеру =====*/
  .header-block {
    width: 1440px;
    height: 72px;
@@ -150,6 +154,7 @@ h3 {
    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+ /*==== Початок описаловки сторінки - головна секція=====*/
  .main-title {
    background: var(--modaloverlay-color-navybluemodal, #2E2F42);
    width: 1440px;
@@ -199,6 +204,7 @@ h3 {
    box-sizing: border-box;
 }
 
+ /*==== Секція навичок та вмінь №2 =====*/
  .defenders-section {
    padding: 120px 0;
  }
@@ -217,13 +223,14 @@ h3 {
  }
  
  .section-h-two {
- margin-bottom: 72px;
+   margin-bottom: 72px;
  }
 
  .section-h-three {
    margin-bottom: 8px;
  }
 
+ /*==== Секція команди №3 =====*/
  .team-section {
    background-color: var(--light-color-cloud, #F4F4FD);
    width: 1440px;
@@ -265,6 +272,7 @@ h3 {
    text-align: center;
  }
 
+ /*==== Секція проектів №4 =====*/
  .portfolio-section{
    padding: 120px 0;
  }
@@ -282,7 +290,6 @@ h3 {
  .portfolio-section-li{
    display: flex;
    flex-direction: column;
-   align-items: center;
    justify-content: center;
    width: calc((100% - 48px) / 3);
  }
@@ -292,51 +299,20 @@ h3 {
    border: 1px solid var(--accent-color-cornflower, #e7e9fc);
    border-top: none;
    align-items: flex-start;
+   justify-content: flex-start;
  }
+
  .portfolio-section-h-three{
    margin-bottom: 8px;
  }
 
-/*.portfolio-section-li.img:first-child {
-   gap: 32px;
-    }*/
-
- .team-section-p {
-    font-size: 16px;
-  }
-
-  .footer-block {
-    background-color: var(--dark-color-navy, #2E2F42);
-    width: 1440px;
-    height: 312px;
-    flex-shrink: 0;
-    padding: 100px 0;
- }
-
- .footer-logo {
-     color: var(--primarybrand-color-iris, #4D5AE5);
-     font-family: Raleway, sans-serif;
-     font-size: 18px;
-     font-weight: 700;
-     line-height: 1.17;
-     letter-spacing: 0.03em;
-     text-transform: uppercase;
-     display: inline-block;
-     margin-bottom: 16px;
- }
-
- .footer-span {
-     color: var(--light-color-cloud, #F4F4FD);
-     font-family: Raleway, sans-serif;
-     font-size: 18px;
-     font-weight: 700;
-     line-height: 1.17;
-     letter-spacing: 0.03em;
-     text-transform: uppercase;
- }
-
- .footer-block-p {
-     color: var(--light-color-cloud, #F4F4FD);
+/*==== Описаловка футера =====*/
+ .footer-block {
+   background-color: var(--dark-color-navy, #2E2F42);
+   width: 1440px;
+   height: 312px;
+   flex-shrink: 0;
+   padding: 100px 0;
  }
 
  .footer-container {
@@ -345,29 +321,29 @@ h3 {
    width: 264 px;
  }
 
-/* .container {
-    max-width: 100%;
-    /*padding-left: 156px;
-    padding-right: 156px;
-    margin-left: 156px;
-    margin-right: 156px;
- }*/
+ .footer-logo {
+   color: var(--primarybrand-color-iris, #4D5AE5);
+   font-family: Raleway, sans-serif;
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 1.17;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   display: inline-block;
+   margin-bottom: 16px;
+ }
 
-/*
+ .footer-span {
+   color: var(--light-color-cloud, #F4F4FD);
+   font-family: Raleway, sans-serif;
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 1.17;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+ }
 
- 
- .defenders-section {}
- .defenders-section-h-two {}
- .defenders-section-h-three {}
- .defenders-section-li {}
- .defenders-section-p {}
-
- .portfolio-section {}
- .portfolio-section-h-two {}
- .portfolio-section-ul {}
- .portfolio-section-li {}
- .portfolio-section-h-three {}
- .portfolio-section-p {}
- 
- .team-section-h-three {}
- */
+ .footer-block-p {
+   color: var(--light-color-cloud, #F4F4FD);
+   max-width: 264px;
+ }
