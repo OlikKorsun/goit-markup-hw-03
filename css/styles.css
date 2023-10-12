@@ -318,7 +318,6 @@ body {
  .footer-container {
    display: flex;
    flex-direction: column;
-   width: 264 px;
  }
 
  .footer-logo {
