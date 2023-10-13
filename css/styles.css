@@ -224,7 +224,7 @@ body {
  }
  
  .hidden-title {
-   visibility: hidden;
+   display: none;
  }
 
  .section-h-two {
