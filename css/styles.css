@@ -322,12 +322,12 @@ body {
  }
 
  .footer-container {
-   display: flex;
+   display: inline-block;
    flex-direction: column;
  }
 
  .footer-logo {
-   display: inline-block;
+   /*display: inline-block;*/
    color: var(--primarybrand-color-iris, #4D5AE5);
    font-family: Raleway, sans-serif;
    font-size: 18px;
@@ -335,7 +335,6 @@ body {
    line-height: 1.17;
    letter-spacing: 0.03em;
    text-transform: uppercase;
-   margin-bottom: 16px;
  }
 
  .footer-span {
@@ -351,4 +350,5 @@ body {
  .footer-block-p {
    color: var(--light-color-cloud, #F4F4FD);
    max-width: 264px;
+   margin-top: 16px;
  }
