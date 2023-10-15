@@ -70,27 +70,30 @@ body {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
  }
 
  /*==== Основний контейнер =====*/
  .container {
-   display: flex;
+/*   display: flex;*/
    width: 1158px;
    padding-left: 15px;
    padding-right: 15px;
-   margin-left: 140px;
-   margin-right: 140px;
+   margin: 0 auto;
    box-sizing: border-box;
  }
 
  /*==== Описаловка Хедеру =====*/
  .header-block {
-   width: 1440px;
-   height: 72px;
    flex-shrink: 0;
    border-bottom: 1px solid #e7e9fc;
  }
  
+ .header-container {
+  display: flex;
+  justify-content: space-between;
+ }
+
  .nav-panel {
    display: flex;
    align-items: center;
@@ -143,7 +146,6 @@ body {
 
  .address-menu {
    display: flex;
-   padding-left: 332px;
    padding-top: 24px;
    padding-bottom: 24px;
    gap: 40px;
@@ -158,13 +160,12 @@ body {
  /*==== Початок описаловки сторінки - головна секція=====*/
  .main-title {
    background: var(--modaloverlay-color-navybluemodal, #2E2F42);
-   width: 1440px;
-   height: 600px;
    padding: 188px 0;;
    box-sizing: border-box;
  }
 
  .main-section {
+   display: flex;
    flex-direction: column;
    height: 224px;
    justify-content: center;
@@ -178,8 +179,6 @@ body {
    line-height: 1.0;
    letter-spacing: 0.02em;
    text-align: center;
-   justify-content: center;
-   align-content: center;
    max-width: 496px;
    height: 120px;
    box-sizing: border-box;
@@ -200,9 +199,6 @@ body {
    border-radius: 4px;
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
    margin-top: 48px;
-   margin-left: 636px;
-   margin-right: 635px;
-   align-items: center;
    box-sizing: border-box;
  }
 
@@ -220,7 +216,6 @@ body {
    display: flex;
    flex-direction: column;
    align-items: flex-start;
-   gap: 8px;
    width: calc((100% - 72px) / 4);
  }
  
@@ -237,19 +232,9 @@ body {
   overflow: hidden;
  }
 
- /*.section-h-two {
-  margin-bottom: 72px;
- }*/
-
- .section-h-three {
-   margin-bottom: 8px;
- }
-
  /*==== Секція команди №3 =====*/
  .team-section {
    background-color: var(--light-color-cloud, #F4F4FD);
-   width: 1440px;
-   height: 732px;
    flex-shrink: 0;
    padding: 120px 0;
   }
@@ -325,14 +310,11 @@ body {
 /*==== Описаловка футера =====*/
  .footer-block {
    background-color: var(--dark-color-navy, #2E2F42);
-   width: 1440px;
-   height: 312px;
    flex-shrink: 0;
    padding: 100px 0;
  }
 
  .footer-container {
-   display: inline-block;
    flex-direction: column;
  }
 
